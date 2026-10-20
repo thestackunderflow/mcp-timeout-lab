@@ -1,0 +1,47 @@
+{
+  "folder": "E4-idle-timeout",
+  "model": "claude-haiku-5-5",
+  "exit": 0,
+  "wall_s": 67.7,
+  "calls": [
+    {
+      "id": 2,
+      "tool": "hang",
+      "arguments": {},
+      "sent": "2026-10-19T11:48:48.105+00:00",
+      "token": 2,
+      "answered_after_s": null,
+      "cancelled_after_s": null,
+      "cancel_reason": null,
+      "progress_notifications": 0
+    }
+  ],
+  "tool_errors": [
+    "MCP server \"slow\" tool \"hang\" sent no response or progress for 60s; aborting. If this server is configured in your MCP settings, set a per-server \"timeout\" (ms) to allow longer silent runs for just this server; otherwise set CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT (ms) globally (0 disables)."
+  ],
+  "system_events": [
+    {
+      "subtype": "thinking_tokens"
+    },
+    {
+      "subtype": "thinking_tokens"
+    }
+  ],
+  "final_text": "The `hang` call failed, and I did not retry it. The error message, verbatim:\n\n```\nMCP server \"slow\" tool \"hang\" sent no response or progress for 60s; aborting. If this server is configured in your MCP settings, set a per-server \"timeout\" (ms) to allow longer silent runs for just this server; otherwise set CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT (ms) globally (0 disables).\n```",
+  "cost_usd": 0.00025066,
+  "turns": 2,
+  "server_events": [
+    {
+      "t": "2026-10-19T11:48:48.107+00:00",
+      "event": "call_start",
+      "request_id": 2,
+      "tool": "hang",
+      "arguments": {},
+      "progress_token": 2
+    },
+    {
+      "t": "2026-10-19T11:49:49.987+00:00",
+      "event": "stdin_closed"
+    }
+  ]
+}

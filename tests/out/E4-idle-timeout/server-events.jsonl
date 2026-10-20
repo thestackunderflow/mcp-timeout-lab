@@ -1,0 +1,2 @@
+{"t": "2026-10-19T11:48:48.107+00:00", "event": "call_start", "request_id": 2, "tool": "hang", "arguments": {}, "progress_token": 2}
+{"t": "2026-10-19T11:49:49.987+00:00", "event": "stdin_closed"}

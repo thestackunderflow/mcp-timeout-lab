@@ -1,0 +1,10 @@
+services:
+  # The server's own tests: a scripted MCP client, no AI, no network.
+  tests:
+    build: .
+    image: mcp-timeout-lab:0.1
+    init: true
+    volumes:
+      - .:/work
+    working_dir: /work
+    command: ["python", "-m", "unittest", "discover", "-s", "tests", "-v"]

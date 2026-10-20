@@ -1,0 +1,2 @@
+{"t": "2026-10-19T11:52:29.574+00:00", "event": "call_start", "request_id": 2, "tool": "wait_seconds", "arguments": {"seconds": 150}, "progress_token": 2}
+{"t": "2026-10-19T11:53:30.698+00:00", "event": "stdin_closed"}

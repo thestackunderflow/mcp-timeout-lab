@@ -1,0 +1,40 @@
+{
+  "folder": "E8-defaults-hang",
+  "model": "claude-haiku-5-5",
+  "exit": 124,
+  "wall_s": 360.1,
+  "calls": [
+    {
+      "id": 2,
+      "tool": "hang",
+      "arguments": {},
+      "sent": "2026-10-19T11:57:14.382+00:00",
+      "token": 2,
+      "answered_after_s": null,
+      "cancelled_after_s": null,
+      "cancel_reason": null,
+      "progress_notifications": 0
+    }
+  ],
+  "tool_errors": [
+    "Connection closed"
+  ],
+  "system_events": [],
+  "final_text": null,
+  "cost_usd": null,
+  "turns": null,
+  "server_events": [
+    {
+      "t": "2026-10-19T11:57:14.384+00:00",
+      "event": "call_start",
+      "request_id": 2,
+      "tool": "hang",
+      "arguments": {},
+      "progress_token": 2
+    },
+    {
+      "t": "2026-10-19T12:03:12.394+00:00",
+      "event": "stdin_closed"
+    }
+  ]
+}

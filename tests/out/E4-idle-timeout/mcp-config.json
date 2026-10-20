@@ -1,0 +1,6 @@
+{ "mcpServers": { "slow": {
+  "command": "docker",
+  "args": ["run", "-i", "--rm", "--name", "slow-lab-E4-idle-timeout",
+           "-v", "<lab>/tests/out/E4-idle-timeout:/out", "mcp-timeout-lab:0.1",
+           "python3", "/opt/slow/proxy/mcp_log_proxy.py", "--log", "/out/mcp.jsonl",
+           "--", "python3", "/opt/slow/server/slow_server.py", "--out", "/out"] } } }

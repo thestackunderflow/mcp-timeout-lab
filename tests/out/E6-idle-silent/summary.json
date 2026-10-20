@@ -1,0 +1,44 @@
+{
+  "folder": "E6-idle-silent",
+  "model": "claude-haiku-5-5",
+  "exit": 0,
+  "wall_s": 62.9,
+  "calls": [
+    {
+      "id": 2,
+      "tool": "wait_seconds",
+      "arguments": {
+        "seconds": 150
+      },
+      "sent": "2026-10-19T11:52:29.573+00:00",
+      "token": 2,
+      "answered_after_s": null,
+      "cancelled_after_s": null,
+      "cancel_reason": null,
+      "progress_notifications": 0
+    }
+  ],
+  "tool_errors": [
+    "MCP server \"slow\" tool \"wait_seconds\" sent no response or progress for 60s; aborting. If this server is configured in your MCP settings, set a per-server \"timeout\" (ms) to allow longer silent runs for just this server; otherwise set CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT (ms) globally (0 disables)."
+  ],
+  "system_events": [],
+  "final_text": "The `wait_seconds` call failed with this error, reported verbatim:\n\n```\nMCP server \"slow\" tool \"wait_seconds\" sent no response or progress for 60s; aborting. If this server is configured in your MCP settings, set a per-server \"timeout\" (ms) to allow longer silent runs for just this server; otherwise set CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT (ms) globally (0 disables).\n```\n\nPer your instructions, I did not retry. The 150-second wait did not complete.",
+  "cost_usd": 0.00039309,
+  "turns": 2,
+  "server_events": [
+    {
+      "t": "2026-10-19T11:52:29.574+00:00",
+      "event": "call_start",
+      "request_id": 2,
+      "tool": "wait_seconds",
+      "arguments": {
+        "seconds": 150
+      },
+      "progress_token": 2
+    },
+    {
+      "t": "2026-10-19T11:53:30.698+00:00",
+      "event": "stdin_closed"
+    }
+  ]
+}

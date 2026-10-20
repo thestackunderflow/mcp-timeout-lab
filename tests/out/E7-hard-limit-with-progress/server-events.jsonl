@@ -1,0 +1,3 @@
+{"t": "2026-10-19T11:53:34.322+00:00", "event": "call_start", "request_id": 2, "tool": "wait_seconds", "arguments": {"seconds": 150, "progress_every": 10}, "progress_token": 2}
+{"t": "2026-10-19T11:54:34.336+00:00", "event": "cancelled", "request_id": 2, "reason": "SdkError: Request timed out"}
+{"t": "2026-10-19T11:54:35.575+00:00", "event": "stdin_closed"}
